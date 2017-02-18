@@ -152,7 +152,7 @@ var result = multiply(10, 3) //result == 30
 <html>
     <head></head>
     <body>
-        <script>
+        <script> //тут начинется JavaScript код
             var a = 10
             var b = 'string'
             var c = [a, b]
@@ -178,7 +178,7 @@ index.html
     <body>
         <script src="script.js"></script> //тут подключается script.js
         <script>
-            execute()
+            execute() //тут вызывается функция, объявленная в script.js
         </script>
     </body>
 </html>
