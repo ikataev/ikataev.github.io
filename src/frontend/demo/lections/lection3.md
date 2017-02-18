@@ -85,7 +85,9 @@ var b = "И это текст, только в двойных кавычках"
 Типом _array_ является набор значений, объявленных внутри квадратных скобой ([]). Значения могут иметь различные типы.
  
 ```javascript
-var a = [10, 'some text', 1.53, 'other text']
+var a = 10
+var b = 'some text'
+var c = [a, b, 1.53, 'other text']
 ```
 
 ## Функции
@@ -133,3 +135,53 @@ function multiply(value, multiplier) {
 
 var result = multiply(10, 3) //result == 30
 ```
+
+
+## Подключение к странице
+
+Для использования _JavaScript_ в _html_ странице существует специальный тег _script_. Использовать его можно 
+несколькими способами:
+
+* Писать код непосредственно внутри тега _script_
+* Подключить отдельный файл при помощи атрибута _src_
+
+### Код внутри тега _script_
+
+```html
+<!DOCTYPE html>
+<html>
+    <head></head>
+    <body>
+        <script>
+            var a = 10
+            var b = 'string'
+            var c = [a, b]
+        </script>
+    </body>
+</html>
+```
+
+### Подключение внешнего скрипта
+
+script.js
+```javascript
+function execute() {
+	//do something
+}
+```
+
+index.html
+```html
+<!DOCTYPE html>
+<html>
+    <head></head>
+    <body>
+        <script src="script.js"></script> //тут подключается script.js
+        <script>
+            execute()
+        </script>
+    </body>
+</html>
+```
+
+Если для тега _script_ определен атрибут _scr_, то внутри тега уже не может быть кода
