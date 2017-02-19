@@ -37,7 +37,6 @@
 //index.html
 ```html
 <ul id="list"></ul>
-<script src="script.js"></script> 
 ```
 
 //script.js
