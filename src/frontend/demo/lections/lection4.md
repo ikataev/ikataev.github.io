@@ -68,15 +68,7 @@ list.innerHTML = template
 
 ```javascript
 function render() {
-    var index = 0
-    var length = 0
-    var template = ''
-    
-    for (index, length = model.length; index < length; index++) {
-    template += '<li>' + model[index] + '</li>'
-    }
-    
-    list.innerHTML = template
+    //Код из шага 2
 }
 
 render()
